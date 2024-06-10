@@ -10,26 +10,43 @@
 <body>
 <div id="page-container">
     <div id="sidebar">
-        <h1>Logo</h1>
+        <h1><img class="logo" src="./icons/cube-outline.svg" alt="">Dashboard</h1>
         <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><img class="icon" src="./icons/home-account.svg" alt="">Home</li>
+            <li><img class="icon" src="./icons/card-account-details-outline.svg" alt="">Profile</li>
+            <li><img class="icon" src="./icons/email-outline.svg" alt="">Messages</li>
+            <li><img class="icon" src="./icons/history.svg" alt="">History</li>
+            <li><img class="icon" src="./icons/checkbox-marked-circle-auto-outline.svg" alt="">Tasks</li>
+            <li><img class="icon" src="./icons/account-group.svg" alt="">Communities</li>
         </ul>
         <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><img class="icon" src="./icons/cog.svg" alt="">Settings</li>
+            <li><img class="icon" src="./icons/chat-question.svg" alt="">Support</li>
+            <li><img class="icon" src="./icons/domino-mask.svg" alt="">Privacy</li>
         </ul>
     </div>
     <div id="header">
-        <div id="search-bar"></div>
-        <div id="profile-notifications"></div>
-        <div id="profile-greeting"></div>
-        <div id="submission-buttons"></div>
+        <div id="search-bar">
+            <img id="magnify" src="./icons/magnify.svg" alt="Magnifying glass">
+            <input type="text" name="search" id="search">
+        </div>
+        <div id="profile-notifications">
+            <img id="bell" src="./icons/bell-ring-outline.svg" alt="Notification bell">
+            <img class="user-image" src="./profile_photos/peppy.jpg" alt="User profile photo">
+            <p>Pepperoni Pizza</p>
+        </div>
+        <div id="profile-greeting">
+            <img class="user-image" src="./profile_photos/peppy.jpg" alt="User profile photo">
+            <div>
+                <p>Hi there,</p>
+                <p class="larger">Pepperoni Pizza (@Peppy)</p>
+            </div>
+        </div>
+        <div id="submission-buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </div>
     <div id="body">
         <div class="card"></div>
@@ -40,18 +57,35 @@
         <div class="card"></div>
     </div>
     <div id="notification-tray">
-        <p>Label</p>
+        <p>Notifications</p>
         <div id="notifications">
-            <div class="notification"></div>
-            <div class="notification"></div>
-            <div class="noborder"></div>
+            <div class="notification">
+                <strong>Site Maintenance</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur lobortis ligula eu rhoncus. Integer arcu lorem, convallis a elit fringilla, scelerisque euismod diam.</p>
+            </div>
+            <div class="notification">
+                <strong>New Features!</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur lobortis ligula eu rhoncus. Integer arcu lorem, convallis a elit fringilla, scelerisque euismod diam.</p>
+            </div>
+            <div class="noborder">
+                <strong>Stuff</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur lobortis ligula eu rhoncus. Integer arcu lorem, convallis a elit fringilla, scelerisque euismod diam.</p>
+            </div>
         </div>
-        <p>Label</p>
+        <p>Trending</p>
         <div id="trending">
-            <div class="notification"></div>
-            <div class="notification"></div>
-            <div class="notification"></div>
-            <div class="noborder"></div>
+            <div class="notification"><img class="profile-photo" src="./profile_photos/pepper.jpg" alt="Pepper">
+                <strong>@Pepper</strong>
+            </div>
+            <div class="notification"><img class="profile-photo" src="./profile_photos/bepper.jpg" alt="Pepper">
+                <strong>@Bepper</strong>
+            </div>
+            <div class="notification"><img class="profile-photo" src="./profile_photos/peppy.jpg" alt="Pepper">
+                <strong>@Peppy</strong>
+            </div>
+            <div class="noborder"><img class="profile-photo" src="./profile_photos/squepper.jpg" alt="Pepper">
+                <strong>@Sniff</strong>
+            </div>
         </div>
     </div>
 </div>
