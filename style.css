@@ -51,6 +51,10 @@ ul > li {
     gap: 10px;
 }
 
+li:hover {
+    text-decoration: underline;
+}
+
 .icon {
     width: 30px;
     height: 30px;
@@ -131,6 +135,10 @@ ul > li {
     border-radius: 20px;
     width: 5em;
     height: 2em;
+}
+
+#submission-buttons > button:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
 }
 
 #magnify, #bell {
@@ -246,14 +254,17 @@ input {
 }
 
 .card-icons > img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .card-icons {
     display: flex;
     justify-content: end;
     margin-right: 1em;
-    gap: 20px;
+    gap: 30px;
 }
 
+.card-icons > img:hover {
+    border-bottom: solid 2px;
+}
